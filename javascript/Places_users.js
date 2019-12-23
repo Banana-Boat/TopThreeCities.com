@@ -11,7 +11,7 @@ var is_liked3 = false;
 //请求数据
 window.onload = function(){
     $.ajax({
-        url : "http://127.0.0.1:90/php/GetShareInfo.php?id=" + GetQueryString("id"),
+        url : "http://172.20.10.11:90/php/GetShareInfo.php?id=" + GetQueryString("id"),
         dataType : "json",//数据格式
         type : "get",//请求方式
         success : function(data) {   //如果请求成功，返回数据。
@@ -156,7 +156,7 @@ function like(likes_id, is_liked){
     $("#likes" + likes_id).click(function(){
         if(!is_liked){
             $.ajax({
-                url : "http://127.0.0.1:90/php/Like.php?id=" + GetQueryString("id") + "&likes_id=" + likes_id,
+                url : "http://172.20.10.11:90/php/Like.php?id=" + GetQueryString("id") + "&likes_id=" + likes_id,
                 type : "get",
                 dataType : "text",
                 success : function(data){
