@@ -1,11 +1,40 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta charset="utf-8"></meta>
         <title>Places</title>
+        <meta charset="utf-8"></meta>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <link href="../css/normalize.css" rel="stylesheet" />
+        <script src="../javascript/jquery-3.4.1.min.js"></script>
+        <link href="/css/Places_page.css" rel="stylesheet" />
     </head>
     <body>
-        <h1><center>Top ten places</center></h1>
-        <hr/>
+        <header></header>
+        <main>
+            <div class="title">
+                <p>The Top Three Cities</p>
+            </div>
+            <div class="users_aside">
+                <div class="users">
+                    <p>分享人:</p>
+                    <ul></ul>
+                </div>
+                <aside>
+                    <div class="share">
+                        <a href="../html/Places_share.html">
+                            <img src="../image/pineapple_ico.ico" />
+                            <p>分 享 你 的<br>Top Three Cities</p>
+                        </a>
+                    </div>
+                </aside>
+            </div>
+        </main>
+        <footer></footer>
+        <script src="../javascript/Places_page.js"></script>
+        <script>
+            $("Common_head").load("../html/Common_header.html");
+            $("header").load("../html/Common_header.html");
+            $("footer").load("../html/Common_footer.html");
+        </script>
     </body>
 </html>

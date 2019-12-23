@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head >
+        <title>Places_users</title>
+        <meta charset=utf-8></meta>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <link href="../css/normalize.css" rel="stylesheet" />
+        <link href="../css/Places_users.css" rel="stylesheet" />
+        <script src="../javascript/jquery-3.4.1.min.js"></script>
+        <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+        <script src="https://unpkg.com/gitalk@latest/dist/gitalk.min.js"></script> 
+        <script type="text/javascript" src="https://webapi.amap.com/maps?v=1.4.15&key=a4a2d8387ada6610c15aa4146fbe645c"></script>
+    </head>
+    <body>
+        <header></header>
+        <main>
+            <div class="title">
+                <p id="title"></p>
+            </div>
+            <div class="display">
+                <div class="content">
+                    <ul>
+                        <li class="city">
+                            <p id="cname1" class="name"></p>
+                            <div class="map_panel">
+                                <div class="map" id="m1"></div>
+                                <div class="panel" id="panel1"></div>
+                            </div>
+                            <p>我的印象</p>
+                            <p id="discription1" class="discription"></p>
+                            <p id="w1"></p>
+                            <p id="d1"></p>
+                            <button id="btn1" class="button">显示距离</button>
+                            <button class="like" id="likes1">
+                                <img class="like_img" src="../image/heart1.ico">
+                                <p class="like_p" id="likes_p1"></p>
+                            </button>
+                        </li>
+                        <li class="city">
+                            <p id="cname2" class="name">云南</p>
+                            <div class="map_panel">
+                                <div class="map" id="m2"></div>
+                                <div class="panel" id="panel2"></div>
+                            </div>
+                            <p>我的印象</p>
+                            <p id="discription2" class="discription"></p>
+                            <p id="w2"></p>
+                            <p id="d2"></p>
+                            <button id="btn2" class="button">显示距离</button>
+                            <button class="like" id="likes2">
+                                <img class="like_img" src="../image/heart1.ico">
+                                <p class="like_p" id="likes_p2"></p>
+                            </button>
+                        </li>
+                        <li class="city">
+                            <p id="cname3" class="name">遵义</p>
+                            <div class="map_panel">
+                                <div class="map" id="m3"></div>
+                                <div class="panel" id="panel3"></div>
+                            </div>
+                            <p>我的印象</p>
+                            <p id="discription3" class="discription"></p>
+                            <p id="w3"></p>
+                            <p id="d3"></p>
+                            <button id="btn3" class="button">显示距离</button>
+                            <button class="like" id="likes3">
+                                <img class="like_img" src="../image/heart1.ico">
+                                <p class="like_p" id="likes_p3"></p>
+                            </button>
+                        </li>
+                    </ul>
+                    <div id="gitalk-container"></div> 
+                </div>
+                <aside>
+                    <img id="geo_img" onclick="show_geo();">
+                    <p id="is_getpos"></p>
+                    <div id="geo_map"></div>
+                    <p id='result'></p>
+                </aside>
+            </div>
+        </main>
+        <footer></footer>
+        <script src="../javascript/Places_users.js"></script>
+    </body>
+</html>

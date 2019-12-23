@@ -1,22 +1,37 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
     <head>
-        <meta charset="utf-8"></meta>
-        <title>The Top Ten</title>
+        <title>Top Three Cities</title>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <link href="../css/normalize.css" rel="stylesheet" />
+        <script src="../javascript/jquery-3.4.1.min.js"></script>
+        <link href="../css/Home_page.css" rel="stylesheet" />
     </head>
     <body>
-        <h1><center>The Top Ten</center></h1>
-        <hr/>
-        <p>In this place, you can share your best top ten <em>songs, movies, places</em>.etc</p>
-        <p>
-            <ul>
-                <li><a href="Home_page.html">Home</a></li>
-                <li><a href="Songs_page.html">Songs</a></li>
-                <li><a href="Movies_page.html">Movies</a></li>
-                <li><a href="Places_page.html">Places</a></li>
-            </ul>
-        </p>
-        <hr/>
-        <p>><a href="mailto:937499953@qq.com">Send email to me!</a></p>
+        <header></header>
+        <main>
+            <div class="title">
+                <p>分享你的Top Three Cities</p>
+            </div>
+            <div class="content_aside">
+                <div class="content">
+                    <iframe src="//player.bilibili.com/player.html?aid=45312481&cid=79335378&page=1" 
+                    scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
+                </div>
+                <aside>
+                    <div class="share">
+                        <a href="../html/Places_page.html">
+                            <img src="../image/pineapple_ico.ico" />
+                            <p class="share_p">看看大家的分享</p>
+                        </a>
+                    </div>
+                </aside>    
+            </div>
+        </main>
+        <footer></footer>
+        <script>
+            $("header").load("../html/Common_header.html");
+            $("footer").load("../html/Common_footer.html");
+        </script>
     </body>
 </html>

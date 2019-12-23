@@ -1,0 +1,264 @@
+﻿body{
+    background: url("../image/beach.jpg")no-repeat;
+    background-attachment: fixed;
+    background-size: 100%;
+    line-height:1.6rem;
+    font-family: cursive;
+}
+header {
+    background-color: rgba(255, 255, 255, 0.85);
+}
+    @media (max-width: 768px) {
+        /*页眉*/
+        header div {
+            height: 80px;
+            background: url("/image/boat.ico")no-repeat;
+            background-size: 80px 80px;
+            background-position-x: 20px;
+        }
+            header div h1 {
+                color: rgb(68, 138, 204);
+                font-size: 1.6rem;
+                padding-top: 1rem;
+                padding-left: 7rem;
+            }
+            header nav{
+                display: none;
+            }
+        /*中央主标题*/
+        main .title{
+            background-color: rgba(58, 139, 231, 0.8);
+            width: 90%;
+            margin: auto;
+        }
+        main .title p{
+            line-height: 3.4rem;
+            text-align: center;
+            color: ivory;
+            font-size: 2.6rem;
+            font-weight: bold;
+            padding: 4% 2%;
+        }
+        /*页脚*/
+        footer{
+            text-align: center;
+        }
+        footer a {
+            text-decoration: none;
+            color: rgb(58, 140, 247);
+            font-size: 1.2rem;
+        }
+    }
+    @media (min-width: 768px) {
+        /*页眉*/
+        header div {
+            height: 100px;
+            background: url("/image/boat.ico")no-repeat;
+            background-size: 100px 100px;
+            background-position-x: 50px;
+        }
+            header div h1 {
+                color: rgb(68, 138, 204);
+                font-size: 2rem;
+                padding-top: 1rem;
+                padding-left: 10rem;
+            }
+            header div nav {
+                display: block;
+                float: right;
+            }
+                header div nav ul {
+                    display: inline;
+                }
+                header div nav li {
+                    display: block;
+                    float: left;
+                }
+                header div nav a {
+                    display: block;
+                    color: rgb(68, 138, 204);
+                    text-decoration: none;
+                    padding: 0 2rem;
+                    font-size: 1.4rem;
+                }
+        /*中央主标题*/
+        main .title{
+            background-color: rgba(58, 139, 231, 0.8);
+            width: 85%;
+            margin: auto;
+        }
+        main .title p{
+            line-height: 5rem;
+            text-align: center;
+            color: ivory;
+            font-size: 4rem;
+            font-weight: bold;
+            padding: 6% 2%;
+        }
+        /*页脚*/
+        footer{
+            text-align: center;
+        }
+        footer a {
+            text-decoration: none;
+            color: rgb(58, 140, 247);
+            font-size: 1.4rem;
+        }
+    }
+    @media (min-width: 1200px) {
+        /*页眉*/
+        header div {
+            height: 128px;
+            background: url("/image/boat.ico")no-repeat;
+            background-size: 128px 128px;
+            background-position-x: 80px;
+        }
+            header div h1 {
+                color: rgb(68, 138, 204);
+                font-size: 2.5rem;
+                padding-top: 1.75rem;
+                padding-left: 14.4rem;
+            }
+            header div nav {
+                display: block;
+                float: right;
+                margin-right: 4.4rem;
+            }
+                header div nav ul {
+                    display: inline;
+                }
+                header div nav li {
+                    display: block;
+                    float: left;
+                }
+                header div nav a {
+                    display: block;
+                    color: rgb(68, 138, 204);
+                    text-decoration: none;
+                    padding: 0 2rem;
+                    font-size: 1.6rem;
+                }
+        /*中央主标题*/
+        main .title{
+            background-color: rgba(58, 139, 231, 0.8);
+            width: 85%;
+            margin: auto;
+            margin-top: 6rem;
+        }
+        main .title p{
+            line-height: 6.5rem;
+            text-align: center;
+            color: ivory;
+            font-size: 5.4rem;
+            font-weight: bold;
+            padding: 8% 2%;
+        }
+        /*页脚*/
+        footer{
+            text-align: center;
+        }
+        footer a {
+            text-decoration: none;
+            color: rgb(58, 140, 247);
+            font-size: 1.6rem;
+        }
+    }
+/*分享部分*/
+main .sharing {
+    background-color: rgba(255, 255, 255, 0.97);
+}
+    .sharing {
+        color: rgb(68, 138, 204);
+        padding: 0 20%;
+        font-size: 1.9rem;        
+    }
+    .sharing p{
+        line-height: 2.4rem;
+    }
+    /*用户昵称*/
+    .sharing .name_border {
+        border-bottom: 0.3rem dotted rgb(68, 138, 204);
+        padding-top: 0.3rem;
+    }
+        .name{
+            padding: 0 16%;
+            padding-bottom: 1.8rem;
+        }
+            #name_input {
+                display: inline-block;
+                width: 40%;
+                height: 1.6rem;
+                font-size: 1.25rem;
+                color: black;
+            }
+            #is_legal {
+                color: yellow;
+                margin: 0;
+                display: inline-block;
+                padding-left: 20%;
+            }
+    /*城市*/
+    .city_border {
+        border-bottom: 0.3rem dotted rgb(68, 138, 204);
+    }
+        .city {
+            padding: 0 16%;
+            padding-bottom: 4%;
+        }
+            .city_map{
+                margin-top: 1rem;
+                height: 12rem;
+                width: 65%;
+                display: inline-block;
+            }
+            .select_div{
+                margin-top: 1rem;
+                float: right;
+            }
+            select{
+                display: block;
+                margin: 1rem;
+                height: 2rem;
+                width: 95%;
+                font-size: 1.2rem;
+
+            }
+            .city_name {
+                display: inline-block;
+                width: 40%;
+                height: 1.6rem;
+                font-size: 1.25rem;
+                color: black;
+                margin-bottom: 1rem;
+            }
+            .is_exist {
+                color: yellow;
+                margin: 0;
+                display: inline-block;
+                padding-left: 20%;
+            }
+            .discription {
+                width: 100%;
+                height: 12rem;
+                font-size: 1.2rem;
+                color: black;
+                line-height: 1.5rem;
+            }
+    /*按钮*/
+    .button {
+        width: 22%;
+        color: white;
+        font-size: 1.5rem;
+        background: #4C8FFB;
+        border: 1px #3079ED solid;
+        box-shadow: inset 0 1px 0 #80B0FB;
+        margin: 1rem 39%;
+    }
+        .button:hover {
+            border: 1px #2F5BB7 solid;
+            box-shadow: 0 1px 1px #EAEAEA, inset 0 1px 0 #5A94F1;
+            background: #3F83F1;
+        }
+        .button:active {
+            box-shadow: inset 0 2px 5px #2370FE;
+        }

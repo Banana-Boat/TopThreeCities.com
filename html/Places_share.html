@@ -1,0 +1,67 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <title>Places_share</title>
+        <meta charset=utf-8></meta>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <link href="../css/normalize.css" rel="stylesheet" />
+        <link href="/css/Places_share.css" rel="stylesheet" />
+        <script type="text/javascript" src="https://webapi.amap.com/maps?v=1.4.15&key=a4a2d8387ada6610c15aa4146fbe645c"></script>
+        <script src="../javascript/jquery-3.4.1.min.js"></script>
+    </head>
+    <body>
+        <form id="form1" onsubmit="return submitAll();" action="../php/Share.php" method="POST">
+            <header></header>
+            <main>
+                <div class="title">
+                    <p>Top Three Cities 分享</p>
+                </div>
+                <div class="sharing">
+                    <div class="name_border">
+                        <div class="name">
+                            <p>如何称呼？（不超过8个中文或英文字符）</p>
+                            <input id="name_input" type="text" maxlength="8" name="uname"/>
+                            <p id="is_legal"></p>
+                        </div>
+                    </div>
+                    <div class="city_border">
+                        <div class="city">
+                            <div class="city_map" id="cmap1"></div>
+                            <div class="select_div">
+                                <select id="province1"></select>
+                                <select id="city1" name="cname1"></select>
+                            </div>
+                            <p>你的印象（100字以内的简介）:</p>
+                            <textarea id="discription1" class="discription" name="discription1" maxlength="100">印象很深，只不过懒得写...</textarea>
+                        </div>
+                    </div>
+                    <div class="city_border">
+                        <div class="city">
+                            <div class="city_map" id="cmap2"></div>
+                            <div class="select_div">
+                                <select id="province2"></select>
+                                <select id="city2" name="cname2"></select>
+                            </div>
+                            <p>你的印象（100字以内的简介）:</p>
+                            <textarea id="discription2" class="discription" name="discription2">印象很深，只不过懒得写...</textarea>
+                        </div>
+                    </div>
+                    <div class="city_border">
+                        <div class="city">
+                            <div class="city_map" id="cmap3"></div>
+                            <div class="select_div">
+                                <select id="province3"></select>
+                                <select id="city3" name="cname3"></select>
+                            </div>
+                            <p>你的印象（100字以内的简介）:</p>
+                            <textarea id="discription3" class="discription" name="discription3">印象很深，只不过懒得写...</textarea>
+                        </div>
+                    </div>
+                    <button type="submit" class="button">提交</button>
+                </div>
+            </main>
+            <footer></footer>
+            <script src="../javascript/Places_share.js"></script>
+        </form>
+    </body>
+</html>
