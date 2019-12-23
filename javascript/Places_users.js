@@ -18,12 +18,15 @@ window.onload = function(){
             $("#title").text(data.uname + "'s Top Three Cities");
             $("#cname1").text(data.cname1);
             $("#discription1").text(data.discription1);
+            $("#discription1").prepend("&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp;");
             $("#likes_p1").text("赞[" + data.likes1 + "]");
             $("#cname2").text(data.cname2);
             $("#discription2").text(data.discription2);
+            $("#discription2").prepend("&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp;");
             $("#likes_p2").text("赞[" + data.likes2 + "]");
             $("#cname3").text(data.cname3);
             $("#discription3").text(data.discription3);
+            $("#discription3").prepend("&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp;");
             $("#likes_p3").text("赞[" + data.likes3 + "]");
 
             cname1 = data.cname1;
