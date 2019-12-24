@@ -1,5 +1,4 @@
-﻿$("Common_head").load("../html/Common_header.html");
-$("header").load("../html/Common_header.html");
+﻿$("header").load("../html/Common_header.html");
 $("footer").load("../html/Common_footer.html");
 //定义全局变量判断昵称否合法
 var name_is_legal = false;
