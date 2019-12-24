@@ -10,8 +10,15 @@ var is_liked3 = false;
 //////////////////////////////////////////////////////////////////////////////////////////////////
 //请求数据
 window.onload = function(){
+    var url;
+    if (GetQueryString("id")) {
+        url = "http://172.20.10.11:90/php/GetShareInfo.php?id=" + GetQueryString("id");
+        sessionStorage.setItem("id", GetQueryString("id"));
+    }else{
+        url = "http://172.20.10.11:90/php/GetShareInfo.php?id=" + sessionStorage.getItem("id");
+    }
     $.ajax({
-        url : "http://172.20.10.11:90/php/GetShareInfo.php?id=" + GetQueryString("id"),
+        url : url,
         dataType : "json",//数据格式
         type : "get",//请求方式
         success : function(data) {   //如果请求成功，返回数据。
