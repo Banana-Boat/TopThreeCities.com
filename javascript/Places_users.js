@@ -11,10 +11,10 @@ var is_liked3 = false;
 window.onload = function(){
     var url;
     if (GetQueryString("id")) {
-        url = "http://172.20.10.11:90/php/GetShareInfo.php?id=" + GetQueryString("id");
+        url = "../php/GetShareInfo.php?id=" + GetQueryString("id");
         sessionStorage.setItem("id", GetQueryString("id"));
     }else{
-        url = "http://172.20.10.11:90/php/GetShareInfo.php?id=" + sessionStorage.getItem("id");
+        url = "../php/GetShareInfo.php?id=" + sessionStorage.getItem("id");
     }
     $.ajax({
         url : url,
@@ -165,7 +165,7 @@ function like(likes_id, is_liked){
     $("#likes" + likes_id).click(function(){
         if(!is_liked){
             $.ajax({
-                url : "http://172.20.10.11:90/php/Like.php?id=" + GetQueryString("id") + "&likes_id=" + likes_id,
+                url : "../php/Like.php?id=" + GetQueryString("id") + "&likes_id=" + likes_id,
                 type : "get",
                 dataType : "text",
                 success : function(data){

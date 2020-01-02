@@ -1,6 +1,6 @@
 window.onload = function(){
     $.ajax({
-        url : "http://172.20.10.11:90/php/ShowUser.php",
+        url : "../php/ShowUser.php",
         dataType : "json",//数据格式
         type : "get",//请求方式
         success : function(data) {   //如果请求成功，返回数据。
